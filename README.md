@@ -117,12 +117,13 @@ crypto-ai-dashboard/
 ### Prerequisites
 - Python 3.8+
 - pip package manager
+- 4GB+ RAM recommended (for AI models)
 
 ### Installation
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/Eva1879/crypto-ai-dashboard.git
 cd crypto-ai-dashboard
 ```
 
@@ -138,6 +139,8 @@ streamlit run app_complete.py
 
 4. **Open your browser**
 Navigate to `http://localhost:8501`
+
+**Note**: First run may take 5-10 minutes as AI models download
 
 ## 🎮 Usage
 
@@ -202,27 +205,32 @@ NEWS_API_KEY=pub_cb7a7f66947c4fdbb107797493a185a4
 - Dogecoin (DOGE-USD)
 - And more...
 
-## 🚀 Deployment
+## 🚀 Getting Started
 
-### Render (Recommended)
-1. **Create Render Account**: Go to https://render.com/
-2. **Connect GitHub**: Link your GitHub repository
-3. **Select Repository**: Choose `Eva1879/crypto-ai-dashboard`
-4. **Configure**:
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `streamlit run app_complete.py --server.port=$PORT`
-5. **Deploy**: Click "Deploy" and wait a few minutes
-
-**Live Demo**: https://crypto-ai-dashboard.onrender.com
-
-### Local Development
+### Local Development (Recommended)
 ```bash
-# Clone and run locally
+# Clone the repository
 git clone https://github.com/Eva1879/crypto-ai-dashboard.git
 cd crypto-ai-dashboard
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the application
 streamlit run app_complete.py
+
+# Access at: http://localhost:8501
 ```
+
+### Prerequisites
+- Python 3.8+
+- pip package manager
+- 4GB+ RAM recommended (for AI models)
+
+### Installation Notes
+- TensorFlow/Keras may take 5-10 minutes to install
+- Hugging Face models download on first run
+- Total installation time: 10-15 minutes
 
 ## 🤝 Contributing
 
