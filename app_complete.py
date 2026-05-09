@@ -26,7 +26,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'agents'))
 sys.path.append(os.path.join(os.path.dirname(__file__), 'auth'))
 
 # Import all modules
-from indicators.rsi import calculate_rsi
+from indicators.rsi import calculate_rsi, calculate_macd, calculate_bollinger_bands
 from recommendation.engine import get_recommendation
 from sentiment.news_analyzer import get_crypto_news, get_overall_sentiment
 from chatbot.ai_chatbot import CryptoChatbot
