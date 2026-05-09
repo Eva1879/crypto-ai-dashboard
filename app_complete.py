@@ -38,8 +38,44 @@ from agents.sentiment_agent import SentimentAgent
 from agents.advisor_agent import AdvisorAgent
 from auth.auth_system import init_auth_state, require_auth, login_page, register_page, logout
 
+# Custom CSS for beautiful UI
+st.markdown("""
+<style>
+    .main {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .stApp {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    h1, h2, h3 {
+        color: white !important;
+    }
+    .stButton>button {
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 10px;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+    .stButton>button:hover {
+        background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+    }
+    div[data-testid="stSidebar"] {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+    }
+    .metric-card {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+</style>
+""", unsafe_allow_html=True)
+
 st.set_page_config(
-    page_title="Complete Crypto AI Dashboard",
+    page_title="Crypto AI Dashboard",
     page_icon="🚀",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -70,15 +106,44 @@ def main():
 def show_main_dashboard():
     """Show the main dashboard with all features"""
     
+    # Beautiful header
+    st.markdown("""
+    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+                padding: 30px; border-radius: 20px; margin-bottom: 20px;
+                border: 2px solid rgba(255, 255, 255, 0.2);">
+        <h1 style="text-align: center; margin: 0; color: white; font-size: 2.5em;">
+            🚀 Crypto AI Dashboard
+        </h1>
+        <p style="text-align: center; margin: 10px 0 0 0; color: rgba(255, 255, 255, 0.9); font-size: 1.2em;">
+            Multi-Agent Intelligence Platform
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    
     # User info and logout
-    col1, col2 = st.columns([4, 1])
+    col1, col2, col3 = st.columns([3, 1, 1])
     with col1:
-        st.title(f"🚀 Complete Crypto AI Dashboard")
-        st.markdown(f"Welcome back, **{st.session_state.current_user['username']}**!")
+        st.markdown(f"""
+        <div class="metric-card">
+            <h3 style="margin: 0; color: #667eea;">👤 User</h3>
+            <p style="margin: 5px 0 0 0; font-weight: bold;">{st.session_state.current_user['username']}</p>
+            <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #666;">
+                Risk Profile: {st.session_state.current_user.get('risk_profile', 'Moderate')}
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
     
     with col2:
         if st.button("🚪 Logout", use_container_width=True):
             logout()
+    
+    with col3:
+        st.markdown("""
+        <div class="metric-card">
+            <h3 style="margin: 0; color: #667eea;">📊 Status</h3>
+            <p style="margin: 5px 0 0 0; font-weight: bold; color: #00ff88;">✅ Online</p>
+        </div>
+        """, unsafe_allow_html=True)
     
     # Sidebar with navigation
     st.sidebar.header("📊 Navigation")
