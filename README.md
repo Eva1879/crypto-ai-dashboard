@@ -1,4 +1,4 @@
-# 🚀 Crypto AI Dashboard
+# 🚀 AI Cryptocurrency Analyzer
 
 A comprehensive cryptocurrency analysis platform demonstrating advanced AI integration in financial technology, built for learning and local development.
 
