@@ -205,21 +205,28 @@ NEWS_API_KEY=pub_cb7a7f66947c4fdbb107797493a185a4
 - Dogecoin (DOGE-USD)
 - And more...
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Local Development (Recommended)
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/Eva1879/crypto-ai-dashboard.git
 cd crypto-ai-dashboard
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the application
+# Run application
 streamlit run app_complete.py
 
 # Access at: http://localhost:8501
+```
+
+### Streamlit Deployment (Lightweight Version)
+```bash
+# For Streamlit deployment without TensorFlow compatibility issues:
+# Use app_streamlit.py and requirements_streamlit.txt
+# Update deployment settings to point to these files
 ```
 
 ### Prerequisites
@@ -231,8 +238,9 @@ streamlit run app_complete.py
 - TensorFlow/Keras may take 5-10 minutes to install
 - Hugging Face models download on first run
 - Total installation time: 10-15 minutes
+- Streamlit deployment: Use lightweight version for compatibility
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
