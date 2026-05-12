@@ -1,6 +1,26 @@
 # 🚀 Crypto AI Dashboard
 
-A comprehensive cryptocurrency analysis dashboard with AI-powered recommendations, technical indicators, and real-time market insights.
+A comprehensive cryptocurrency analysis platform demonstrating advanced AI integration in financial technology, built for learning and local development.
+
+## 🎯 Overview
+
+This project showcases advanced AI and machine learning techniques applied to cryptocurrency analysis:
+- **Multi-Agent Architecture**: 4 specialized AI agents working together
+- **Machine Learning**: LSTM neural networks for price prediction
+- **Natural Language Processing**: Sentiment analysis using Hugging Face models
+- **Real-Time Analysis**: Live market data with technical indicators
+- **Portfolio Management**: Complete tracking system with user authentication
+
+## 🎓 Learning Objectives
+
+This project demonstrates:
+- **Full-Stack Development**: Complete application from frontend to backend
+- **AI/ML Integration**: Real-world application of neural networks and NLP
+- **Financial Technology**: Understanding of cryptocurrency markets and analysis
+- **System Architecture**: Multi-agent design patterns and modular development
+- **Data Processing**: Real-time data handling and visualization
+- **AI Recommendations**: Intelligent BUY/HOLD/SELL signals based on technical analysis
+- **Multi-cryptocurrency Support**: Analyze BTC, ETH, BNB, XRP, ADA, SOL, DOGE and more
 
 ## 📋 Features
 
@@ -205,9 +225,9 @@ NEWS_API_KEY=pub_cb7a7f66947c4fdbb107797493a185a4
 - Dogecoin (DOGE-USD)
 - And more...
 
-## Getting Started
+## 🚀 Getting Started
 
-### Local Development (Recommended)
+### Local Development
 ```bash
 # Clone repository
 git clone https://github.com/Eva1879/crypto-ai-dashboard.git
@@ -216,74 +236,11 @@ cd crypto-ai-dashboard
 # Install dependencies
 pip install -r requirements.txt
 
-# Run application
+# Run the complete application
 streamlit run app_complete.py
 
 # Access at: http://localhost:8501
 ```
-
-### Deployment Options
-
-#### 🏆 Railway (Recommended)
-```bash
-# Best for full TensorFlow support and easy deployment
-1. Go to https://railway.app/
-2. Sign up with GitHub (no email verification)
-3. Deploy from GitHub repo: Eva1879/crypto-ai-dashboard
-4. Auto-detects Python settings
-5. Build: pip install -r requirements.txt
-6. Start: streamlit run app_deploy.py --server.port=$PORT --server.address=0.0.0.0
-```
-
-#### ⚡ Vercel (Serverless)
-```bash
-# Best for unlimited deployments and serverless architecture
-1. Go to https://vercel.com/
-2. Sign up with GitHub
-3. Click "New Project"
-4. Import GitHub repo: Eva1879/crypto-ai-dashboard
-5. Vercel will auto-detect Python project
-6. Use api.py + requirements_vercel.txt + vercel.json
-7. Click "Deploy"
-
-# Configuration files:
-# - api.py (Flask API server)
-# - requirements_vercel.txt (Flask dependencies)
-# - vercel.json (Vercel configuration)
-```
-
-#### 🎯 Render (Alternative)
-```bash
-# Good option with free tier
-1. Go to https://render.com/
-2. Connect GitHub repo: Eva1879/crypto-ai-dashboard
-3. Use app_deploy.py + requirements_streamlit.txt
-4. May hit memory limits with TensorFlow
-```
-
-#### 🐍 PythonAnywhere (ML-Friendly)
-```bash
-# Good for ML experiments
-1. Go to https://www.pythonanywhere.com/
-2. Create free account
-3. Upload project files
-4. Install: pip install -r requirements.txt
-5. Configure web app for Streamlit
-```
-
-#### 📱 Streamlit Community Cloud
-```bash
-# Use lightweight version for compatibility
-1. Go to https://share.streamlit.io/
-2. Connect GitHub repo: Eva1879/crypto-ai-dashboard
-3. Use app_deploy.py + requirements_streamlit.txt
-4. TensorFlow not supported on free tier
-```
-
-### Deployment Files
-- **Full Version**: `app_complete.py` + `requirements.txt` (with TensorFlow)
-- **Lightweight Version**: `app_deploy.py` + `requirements_streamlit.txt` (no TensorFlow)
-- **Standalone Version**: `app_deploy.py` (no external dependencies)
 
 ### Prerequisites
 - Python 3.8+
@@ -294,7 +251,10 @@ streamlit run app_complete.py
 - TensorFlow/Keras may take 5-10 minutes to install
 - Hugging Face models download on first run
 - Total installation time: 10-15 minutes
-- Streamlit deployment: Use lightweight version for compatibility
+
+### Available Versions
+- **Complete Version**: `app_complete.py` (all features with TensorFlow)
+- **Lightweight Version**: `app_deploy.py` (core features without TensorFlow)
 
 ## Contributing
 

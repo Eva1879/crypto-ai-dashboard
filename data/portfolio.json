@@ -1,0 +1,30 @@
+{
+  "holdings": {
+    "DOGE": {
+      "amount": 23987777.0,
+      "total_invested": 1079449965.0,
+      "average_buy_price": 45.0,
+      "transactions": [
+        {
+          "type": "buy",
+          "amount": 23987777.0,
+          "price": 45.0,
+          "date": "2026-05-09T22:57:37.986319",
+          "total": 1079449965.0
+        }
+      ]
+    }
+  },
+  "transactions": [
+    {
+      "type": "buy",
+      "amount": 23987777.0,
+      "price": 45.0,
+      "date": "2026-05-09T22:57:37.986319",
+      "total": 1079449965.0,
+      "symbol": "DOGE"
+    }
+  ],
+  "created_at": "2026-05-09T22:49:14.343321",
+  "last_updated": "2026-05-09T22:57:37.986348"
+}
