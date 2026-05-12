@@ -222,12 +222,60 @@ streamlit run app_complete.py
 # Access at: http://localhost:8501
 ```
 
-### Streamlit Deployment (Lightweight Version)
+### Deployment Options
+
+#### 🏆 Railway (Recommended)
 ```bash
-# For Streamlit deployment without TensorFlow compatibility issues:
-# Use app_streamlit.py and requirements_streamlit.txt
-# Update deployment settings to point to these files
+# Best for full TensorFlow support and easy deployment
+1. Go to https://railway.app/
+2. Sign up with GitHub (no email verification)
+3. Deploy from GitHub repo: Eva1879/crypto-ai-dashboard
+4. Auto-detects Python settings
+5. Build: pip install -r requirements.txt
+6. Start: streamlit run app_deploy.py --server.port=$PORT --server.address=0.0.0.0
 ```
+
+#### ⚡ Vercel (Lightweight)
+```bash
+# Best for lightweight version, unlimited deployments
+1. Go to https://vercel.com/
+2. Import GitHub repo: Eva1879/crypto-ai-dashboard
+3. Use app_deploy.py + requirements_streamlit.txt
+4. No TensorFlow support (use lightweight version)
+```
+
+#### 🎯 Render (Alternative)
+```bash
+# Good option with free tier
+1. Go to https://render.com/
+2. Connect GitHub repo: Eva1879/crypto-ai-dashboard
+3. Use app_deploy.py + requirements_streamlit.txt
+4. May hit memory limits with TensorFlow
+```
+
+#### 🐍 PythonAnywhere (ML-Friendly)
+```bash
+# Good for ML experiments
+1. Go to https://www.pythonanywhere.com/
+2. Create free account
+3. Upload project files
+4. Install: pip install -r requirements.txt
+5. Configure web app for Streamlit
+```
+
+#### 📱 Streamlit Community Cloud
+```bash
+# Use lightweight version for compatibility
+1. Go to https://share.streamlit.io/
+2. Connect GitHub repo: Eva1879/crypto-ai-dashboard
+3. Use app_deploy.py + requirements_streamlit.txt
+4. TensorFlow not supported on free tier
+```
+
+### Deployment Files
+- **Full Version**: `app_complete.py` + `requirements.txt` (with TensorFlow)
+- **Lightweight Version**: `app_deploy.py` + `requirements_streamlit.txt` (no TensorFlow)
+- **Standalone Version**: `app_deploy.py` (no external dependencies)
 
 ### Prerequisites
 - Python 3.8+
