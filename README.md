@@ -164,23 +164,18 @@ Navigate to `http://localhost:8501`
 
 ## 🎮 Usage
 
-### Authentication
-1. **Register**: Create a new account with username, email, and password
-2. **Login**: Access your personalized dashboard
-3. **Risk Profile**: Set your investment risk preference (conservative/moderate/aggressive)
-
-### Market Analysis (Phase 1)
+### Market Analysis
 1. **Select Cryptocurrency**: Choose from BTC, ETH, BNB, XRP, ADA, SOL, DOGE
 2. **Choose Time Period**: Select analysis timeframe (1mo, 3mo, 6mo, 1y, 2y)
 3. **View Charts**: Interactive candlestick charts with RSI, MACD, Volume
 4. **Get Recommendations**: AI-powered Buy/Hold/Sell signals with reasoning
 
-### AI Features (Phase 2)
+### AI Features
 1. **News Sentiment**: Analyze market sentiment from latest crypto news
 2. **AI Chatbot**: Ask questions about market analysis and get AI responses
 3. **Market Summaries**: Get AI-generated market summaries
 
-### Advanced Features (Phase 3)
+### Advanced Features
 1. **Portfolio Tracking**: Add/remove holdings, track P&L, view performance
 2. **LSTM Predictions**: Train neural networks and forecast prices
 3. **Multi-Agent Analysis**: Get comprehensive analysis from 4 AI agents
