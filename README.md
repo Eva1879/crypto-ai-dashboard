@@ -235,13 +235,21 @@ streamlit run app_complete.py
 6. Start: streamlit run app_deploy.py --server.port=$PORT --server.address=0.0.0.0
 ```
 
-#### ⚡ Vercel (Lightweight)
+#### ⚡ Vercel (Serverless)
 ```bash
-# Best for lightweight version, unlimited deployments
+# Best for unlimited deployments and serverless architecture
 1. Go to https://vercel.com/
-2. Import GitHub repo: Eva1879/crypto-ai-dashboard
-3. Use app_deploy.py + requirements_streamlit.txt
-4. No TensorFlow support (use lightweight version)
+2. Sign up with GitHub
+3. Click "New Project"
+4. Import GitHub repo: Eva1879/crypto-ai-dashboard
+5. Vercel will auto-detect Python project
+6. Use api.py + requirements_vercel.txt + vercel.json
+7. Click "Deploy"
+
+# Configuration files:
+# - api.py (Flask API server)
+# - requirements_vercel.txt (Flask dependencies)
+# - vercel.json (Vercel configuration)
 ```
 
 #### 🎯 Render (Alternative)
